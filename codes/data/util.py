@@ -20,6 +20,7 @@ def is_image_file(filename):
 
 def _get_paths_from_images(path):
     '''get image path list from image folder'''
+    print(path)
     assert os.path.isdir(path), '{:s} is not a valid directory'.format(path)
     images = []
     for dirpath, _, fnames in sorted(os.walk(path)):
