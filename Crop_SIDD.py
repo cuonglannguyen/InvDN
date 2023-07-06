@@ -7,13 +7,13 @@ cropSize = 512
 num = 100
 
 # Crop SIDD
-GT = glob.glob(os.path.join('/home/yang/Documents/Yang_Liu/Research_Projects/Data/SIDD/SIDD_Medium_Srgb/GT', '*.PNG'))
-Noisy = glob.glob(os.path.join('/home/yang/Documents/Yang_Liu/Research_Projects/Data/SIDD/SIDD_Medium_Srgb/Noisy', '*.PNG'))
+GT = glob.glob(os.path.join('/kaggle/input/sidd-denoising/SIDD_Medium_Srgb/Data/SIDD/SIDD_Medium_Srgb/GT', '*.PNG'))
+Noisy = glob.glob(os.path.join('/kaggle/input/sidd-denoising/SIDD_Medium_Srgb/Data/SIDD/SIDD_Medium_Srgb/Noisy', '*.PNG'))
 
 GT.sort()
 Noisy.sort()
 
-out_dir = "/media/yang/Seagate Expansion Drive/Yang_Liu/Data/SIDD/SIDD_Medium_Srgb_Patches_512"
+out_dir = "/kaggle/input/sidd-denoising/SIDD_Medium_Srgb/Data/SIDD/SIDD_Medium_Srgb_Patches_512"
 if not os.path.exists(out_dir):
     os.mkdir(out_dir)
 if not os.path.exists(os.path.join(out_dir, 'GT')):
