@@ -72,7 +72,7 @@ train:
 
   manual_seed: 10
 
-  val_freq: !!float 1
+  val_freq: !!float 10
 
   lambda_fit_forw: 16.
   lambda_rec_back: 1
@@ -85,4 +85,4 @@ train:
 
 logger:
   print_freq: 1
-  save_checkpoint_freq: !!float 12
+  save_checkpoint_freq: !!float 48
