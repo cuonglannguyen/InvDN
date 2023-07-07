@@ -49,9 +49,9 @@ network_G:
 #### path
 
 path:
-  pretrain_model_G:'768_G.pth'
+  pretrain_model_G:'/kaggle/working/InvDN/768_G.pth'
   strict_load: true
-  resume_state: ~
+  resume_state: 768
 
 
 #### training settings: learning rate scheme, loss
