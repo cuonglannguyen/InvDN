@@ -2,7 +2,7 @@
 #### general settings
 
 name: InvDN_ResUnit_x4
-use_tb_logger: true
+use_tb_logger: false
 model: InvDN
 scale: 4
 gpu_ids: [0]
@@ -19,7 +19,7 @@ datasets:
     dataroot_LQ: ~ # path to training reference LR images, not necessary, if not provided, LR images will be generated in dataloader
 
     use_shuffle: true
-    n_workers: 6  # per GPU
+    n_workers: 2  # per GPU
     batch_size: 28
     GT_size: 144
     use_flip: true
@@ -85,4 +85,4 @@ train:
 
 logger:
   print_freq: 1
-  save_checkpoint_freq: !!float 1
+  save_checkpoint_freq: !!float 12
